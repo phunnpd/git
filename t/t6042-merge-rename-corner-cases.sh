@@ -523,8 +523,6 @@ test_expect_success 'handle rename-with-content-merge vs. add, merge other way' 
 			-L "" \
 			-L "A^0" \
 			ours empty theirs &&
-		git hash-object b >actual &&
-		git hash-object ours >expect &&
 		test_cmp ours b
 	)
 '
